@@ -1,0 +1,125 @@
+.count{
+    display: flex;
+    justify-content: space-around;
+
+}
+.title{
+    color: var(--azul);
+}
+.title, .ok{
+    margin-right: 5px;
+}
+.um, .dois,.separa{
+    display: flex;
+}
+ textarea{
+    padding: 10px;
+    resize: none;
+    width: 48rem;
+    height: 3rem;
+    margin-bottom: 10px;
+    align-content: center;
+    border-radius: 8px;
+}
+.txtandButton{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+li {
+    list-style-type: none;
+  }
+
+span{
+    color: var(--white);
+    background-color: #1d1c1c ;
+    padding: 2px;
+    border-radius: 15%;
+
+}
+.ok{
+    color: var(--roxo);
+}
+
+.tasks{
+display: flex;
+background: var(--gray-500);
+justify-content: space-between;
+margin-left: 15rem;
+margin-right: 15rem;
+padding: 22px;
+margin-top: 24px;
+margin-bottom: 12px;
+border-radius: 8px;
+color: var(--gray-100);
+}
+
+.tasks:has(input:checked) {
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+.noToDo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+input[type="checkbox"] {
+    width: 20px; 
+    height: 20px; 
+    cursor: pointer; 
+    margin-right: 5px;
+}
+.customCheckbox {
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    width: 24px; 
+    height: 24px;
+    border: 2px solid var(--azul); 
+    border-radius: 50%; 
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.notArray{
+    visibility: none;
+}
+
+.customCheckbox:checked{
+    background-color: var(--roxo); /* Cor de fundo ao marcar */
+    border: 2px solid var(--roxo); /* Mantém a borda com a mesma cor */
+}
+.apaga{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.add{
+    background: var(--azul);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 65px;
+    border: solid var(--azul);
+    justify-content: center;
+    height: 3rem;
+}
+.apaga:hover{
+    color: var(--red);
+}
+.customCheckbox:checked::after {
+    content: '✔';
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    
+}
